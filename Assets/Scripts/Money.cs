@@ -6,6 +6,7 @@ public sealed class Money : MonoBehaviour
     private static Single _moneyCount;
     private Single _rotateSpeed;
 
+
     private void Start()
     {
         _moneyCount = 0;

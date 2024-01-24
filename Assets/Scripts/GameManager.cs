@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public sealed class GameManager : MonoBehaviour
 {
     private Money _money;
+    [SerializeField] private TextMeshProUGUI _moneyText;
 
     private void Start()
     {
@@ -13,6 +15,6 @@ public sealed class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Money: " + _money.MoneyCount);
+        _moneyText.text = _money.MoneyCount.ToString();
     }
 }
